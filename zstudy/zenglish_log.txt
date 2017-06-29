@@ -1,0 +1,64 @@
+Wed Jun 28 13:58:33 2017
+Study Length:3
+overall:6193; stuided: 1992; learned: 1364; ratio:0.32
+learned:0.68; umfamiliar:0.20; unlearned 0.12;
+
+Wed Jun 28 17:16:47 2017
+Study Length:127
+overall:6193; stuided: 2095; learned: 1422; ratio:0.34
+learned:0.68; umfamiliar:0.20; unlearned 0.12;
+
+Thu Jun 29 12:55:58 2017
+Study Length:654
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 14:54:22 2017
+Study Length:0
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 14:57:47 2017
+Study Length:0
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 15:22:34 2017
+Study Length:22
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 15:23:22 2017
+Study Length:4
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 16:24:06 2017
+Study Length:37
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 16:35:19 2017
+Study Length:152
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 19:42:35 2017
+Study Length:0
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 20:08:25 2017
+Study Length:440
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 20:10:40 2017
+Study Length:2
+overall:6193; stuided: 2745; learned: 1737; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Thu Jun 29 20:13:05 2017
+Study Length:12
+overall:6193; stuided: 2745; learned: 1728; ratio:0.44
+learned:0.63; umfamiliar:0.20; unlearned 0.17;
