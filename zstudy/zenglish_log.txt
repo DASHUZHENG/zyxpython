@@ -62,3 +62,18 @@ Thu Jun 29 20:13:05 2017
 Study Length:12
 overall:6193; stuided: 2745; learned: 1728; ratio:0.44
 learned:0.63; umfamiliar:0.20; unlearned 0.17;
+
+Fri Jun 30 12:29:23 2017
+Study Length:11
+overall:6193; stuided: 2745; learned: 1919; ratio:0.44
+learned:0.70; umfamiliar:0.15; unlearned 0.15;
+
+Fri Jun 30 13:00:23 2017
+Study Length:11
+overall:6193; stuided: 2745; learned: 1919; ratio:0.44
+learned:0.70; umfamiliar:0.15; unlearned 0.15;
+
+Fri Jun 30 17:07:42 2017
+Study Length:441
+overall:6193; stuided: 2745; learned: 1916; ratio:0.44
+learned:0.70; umfamiliar:0.15; unlearned 0.15;

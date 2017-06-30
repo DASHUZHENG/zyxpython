@@ -7,7 +7,7 @@ import pdb
 import time
 import os
 import numpy
-
+import wikiwords
 
 def ztest():
 
@@ -78,7 +78,7 @@ def ztest():
 
 class ZVacab(object):
 
-    def __init__(self, excel="zenglish.xlsx", time_interim=0.5):
+    def __init__(self, excel="zenglish.xlsx", time_interim=0.5, test_mode=None):
 
         self.vacab = pandas.read_excel(excel)
 
@@ -89,9 +89,16 @@ class ZVacab(object):
         # Weighted Score 2
         self.vacab["Score"] = self.vacab[[
             "Assess_score", "Recite_score"]].min(axis=1)
+
         self.vacab["Weight"] = self.vacab["Score"] * self.vacab["Score"] - 1
 
         #__call__ behavior control
+
+        if test_mode:
+
+            print "Test Mode On"
+
+            self.vacab["Weight"] = self.vacab["Weight"] + 1
 
         self.mode=0
 
@@ -278,6 +285,16 @@ class ZVacab(object):
 
             print("%s\n\n" % self.vacab["Word"][num])
 
+            try:
+            
+                statistic=(wikiwords.freq(self.vacab["Word"][num]),wikiwords.occ(self.vacab["Word"][num]))
+
+            except Exception as e:
+
+                statistic=(0,0)
+            
+            print("Freq:%-10.2eOcc:%-10.2e\n" % statistic)
+
             #print("%s\n\n" % self.vacab["Chinese"][answer])
 
             print("1.Easy 2.Hard 3. Hell q.Quit\n")
@@ -293,6 +310,16 @@ class ZVacab(object):
             print("Question No.%s\n\n" % (self._counter - self._start))
 
             print("%s\n\n" % self.vacab["Word"][num])
+
+            try:
+            
+                statistic=(wikiwords.freq(self.vacab["Word"][num]),wikiwords.occ(self.vacab["Word"][num]))
+
+            except Exception as e:
+
+                statistic=(0,0)
+                
+            print("Freq:%-10.2eOcc:%-10.2e\n" % statistic)
 
             #print("%s\n\n" % self.vacab["Chinese"][answer])
 
@@ -430,20 +457,20 @@ class ZVacab(object):
 
             f.write("\nStudy Length:%s" % (self._counter - self._start))
 
-            overall = len(self.vacab["Assess"])
+            overall = len(self.vacab["Score"])
 
-            studied = len(self.vacab["Assess"][self.vacab["Assess"] != 0])
+            studied = len(self.vacab["Score"][self.vacab["Score"] != 0])
 
-            learned = len(self.vacab["Assess"][self.vacab["Assess"] == 1])
+            learned = len(self.vacab["Score"][self.vacab["Score"] == 1])
 
-            level1 = len(self.vacab["Assess"]
-                         [self.vacab["Assess"] == 1]) / studied
+            level1 = len(self.vacab["Score"]
+                         [self.vacab["Score"] == 1]) / studied
 
-            level2 = len(self.vacab["Assess"]
-                         [self.vacab["Assess"] == 2]) / studied
+            level2 = len(self.vacab["Score"]
+                         [self.vacab["Score"] == 2]) / studied
 
-            level3 = len(self.vacab["Assess"]
-                         [self.vacab["Assess"] == 3]) / studied
+            level3 = len(self.vacab["Score"]
+                         [self.vacab["Score"] == 3]) / studied
 
             f.write(
                 "\noverall:%s; stuided: %s; learned: %s; ratio:%.2f" %
@@ -458,4 +485,4 @@ if __name__ == "__main__":
 
     a = ZVacab()
 
-    a()
+    #a()
